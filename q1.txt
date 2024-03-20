@@ -1,0 +1,35 @@
+Difference Between Document and Window Object:
+    Document and Window are global objects, Document focuses on the content and structure of the HTML document
+and window focuses on the browser window or frame. 
+    Document Primarily deals with the DOM(Document object model) and content access, whereas 
+window deals with the browser-related functionalities like navigation, window management, and event handling at the window level.
+    The document object is nested within the window object.
+    We can not access windows object properties inside the document but we can access document object properties inside the window.
+
+Document Object: 
+    The document object represents the entire HTML document within a webpage. It serves as an interface to manipulate the content and structure of the document. 
+Essentially, it's the entry point to access and modify various elements within the HTML.
+
+Key Characteristics:
+
+Structure Manipulation: The document object facilitates the manipulation of HTML elements such as adding, removing, or modifying elements dynamically.
+Content Access: It allows you to access the content within HTML elements, including text, attributes, and even nested elements.
+Event Handling: You can attach event listeners to elements using the document object, enabling interaction with user actions like clicks, input, etc.
+
+Example:
+// Accessing an element and modifying its content
+document.getElementById("myElement").innerHTML = "New content";
+
+Window Object:
+    The window object represents the browser window or frame that contains the document. It serves as a global object, 
+encapsulating various properties and methods related to the browser window itself rather than the document content.
+
+Key Characteristics:
+
+Global Scope: The window object is the global object in client-side JavaScript, meaning variables and functions declared without var, let, or const are automatically attached to it.
+Browser Interaction: It provides methods for interacting with the browser, such as opening new windows, navigating to URLs, and managing cookies.
+Timers and Events: window object manages timers (e.g., setTimeout, setInterval) and handles various events at the window level (e.g., onload, onresize).
+
+Example:
+// Opening a new browser window
+window.open("https://www.example.com");

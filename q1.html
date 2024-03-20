@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Difference Between Document and Window Object</h2>
+
+<table>
+  <tr>
+    <th>Document Object</th>
+    <th>Windows Object</th>
+  </tr>
+  <tr>
+    <td>Focuses on the content and structure of the HTML document</td>
+    <td>Focuses on the browser window or frame</td>
+  </tr>
+  <tr>
+    <td>Primarily deals with DOM manipulation and content access</td>
+    <td>Deals with the browser-related functionalities and event handling at the window level</td>
+  </tr>
+  <tr>
+    <td>It is loaded after the loading window because the window contains a document</td>
+    <td>It is loaded before the document because window container document</td>
+  </tr>
+  <tr>
+    <td>We can not access windows objects properties inside the document</td>
+    <td>We can access document object properties inside the window</td>
+  </tr>
+  <tr>
+    <td>Syntax:<br>document.propertyname<br>OR<br>window.document.propertyname</td>
+    <td>Syntax:<br>window.propertyname</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
